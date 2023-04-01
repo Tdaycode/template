@@ -59,7 +59,7 @@ To view the list of available APIs and their specifications, visit `https://docu
 ## Validation
 
 Request data is validated using [Joi](https://joi.dev/).
-The validation schemas are defined in the `/validations` directory and are used in the routes by providing them as parameters to the `validate` middleware.
+
 
 ## Test
   npm run test
