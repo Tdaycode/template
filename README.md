@@ -1,4 +1,4 @@
-# TalentQL Assessment
+# DCOMMERCE Assessment
 
 Backend REST API on Node.js v18.13.0 + Hapi.js  +  Hapi Pal + PostgresSql.
 
