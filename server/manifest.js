@@ -42,10 +42,14 @@ module.exports = new Confidence.Store({
                     $base: {
                         migrateOnStart: true,
                         knex: {
-                            client: 'sqlite3',
+                            client: 'pg',
                             useNullAsDefault: true,     // Suggested for sqlite3
                             connection: {
-                                filename: ':memory:'
+                                host: process.env.DB_HOST,
+                                user: process.env.DB_USER,
+                                password: process.env.DB_PASSWORD,
+                                database: 'template',
+                                port: process.env.DB_PORT
                             },
                             migrations: {
                                 stub: Schwifty.migrationsStubPath
